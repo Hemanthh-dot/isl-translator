@@ -42,7 +42,7 @@ type SignItem = {
 };
 
 const VIDEO_BASE_URL =
-  "http://127.0.0.1:8000/videos";
+  "https://isl-translator-2.onrender.com/videos";
 
 const AVAILABLE_VIDEOS = [
   "0.mp4",

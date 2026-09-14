@@ -82,7 +82,7 @@ declare global {
    VIDEO DICTIONARY
 ============================================================ */
 
-const VIDEO_BASE_URL = "http://127.0.0.1:8000/videos/";
+const VIDEO_BASE_URL = "https://isl-translator-2.onrender.com/videos/";
 
 const VIDEO_FILES: string[] = [
   "0.mp4",
