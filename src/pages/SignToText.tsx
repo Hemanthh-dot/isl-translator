@@ -62,7 +62,10 @@ interface AcceptedSign {
 /* CONFIGURATION                                                             */
 /* ========================================================================= */
 
-const WS_URL = "wss://isl-translator-2.onrender.com/ws";
+const WS_URL =
+  window.location.protocol === "https:"
+    ? "wss://isl-translator-2.onrender.com/ws"
+    : "ws://localhost:8000/ws";
 
 const CONFIDENCE_THRESHOLD = 0.6;
 const FRAME_INTERVAL = 280;
