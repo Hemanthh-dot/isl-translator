@@ -36,7 +36,7 @@ import type { AppSettings } from "@/types";
 
 const SETTINGS_STORAGE_KEY = "signbridge-settings";
 
-const API_BASE_URL = "http://localhost:8000/api/v1";
+const API_BASE_URL = "https://isl-translator-2.onrender.com/api/v1";
 
 const DEFAULT_SETTINGS: AppSettings = {
   darkMode: true,

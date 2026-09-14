@@ -168,7 +168,7 @@ export default function Sidebar({
 
       try {
         const response = await fetch(
-          "http://localhost:8000/api/v1/auth/me",
+          "https://isl-translator-2.onrender.com/api/v1/auth/me",
           {
             headers: {
               Authorization: `Bearer ${token}`,
