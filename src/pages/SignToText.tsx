@@ -64,7 +64,7 @@ interface AcceptedSign {
 
 const WS_URL =
   window.location.protocol === "https:"
-    ? "wss://isl-translator-2.onrender.com/ws"
+    ? "wss://isl-translator-docker.onrender.com/ws"
     : "ws://localhost:8000/ws";
 
 const CONFIDENCE_THRESHOLD = 0.6;
