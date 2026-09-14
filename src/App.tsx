@@ -1,8 +1,7 @@
-import { Routes, Route } from "react-router-dom";
+import { Routes, Route, Navigate } from "react-router-dom";
 import MainLayout from "@/layouts/MainLayout";
 
 // Public pages
-import LandingPage from "@/pages/LandingPage";
 import Login from "@/pages/Login";
 import Register from "@/pages/Register";
 
@@ -24,21 +23,21 @@ function App() {
   return (
     <Routes>
       {/* =========================
-          PUBLIC ROUTES
+          LOGIN / REGISTER
           ========================= */}
-
-      <Route path="/" element={<LandingPage />} />
 
       <Route path="/login" element={<Login />} />
 
       <Route path="/register" element={<Register />} />
 
       {/* =========================
-          PROTECTED ROUTES
+          PROTECTED APPLICATION
           ========================= */}
 
       <Route element={<ProtectedRoute />}>
         <Route element={<MainLayout />}>
+          <Route path="/" element={<Home />} />
+
           <Route path="/home" element={<Home />} />
 
           <Route path="/sign-to-text" element={<SignToText />} />
@@ -64,6 +63,12 @@ function App() {
           <Route path="/settings" element={<Settings />} />
         </Route>
       </Route>
+
+      {/* Unknown URLs */}
+      <Route
+        path="*"
+        element={<Navigate to="/" replace />}
+      />
     </Routes>
   );
 }
