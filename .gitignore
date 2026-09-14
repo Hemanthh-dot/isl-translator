@@ -18,7 +18,7 @@ __pycache__/
 
 # Large datasets
 backend/dataset/
-backend/data/
+backend/data/*
 dataset/
 data/
 
@@ -36,3 +36,5 @@ Thumbs.db
 # Logs
 *.log
 npm-debug.log*
+!backend/data/INDIAN SIGN LANGUAGE ANIMATED VIDEOS/
+!backend/data/INDIAN SIGN LANGUAGE ANIMATED VIDEOS/**
